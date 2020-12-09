@@ -10,10 +10,10 @@ public class HelloWebController {
 	public String Hello() {
 		return "hello";
 	}
-	
-	@GetMapping("/web/message") 
-		public String message(Model model) {
-			model.addAttribute("message", "This is a custom message. Hello from Bridgelabz");
-			return "message";
-		}
+
+	@GetMapping("/web/message")
+	public String message(Model model) {
+		model.addAttribute("message", "This is a custom message. Hello from Bridgelabz");
+		return "message";
+	}
 }
